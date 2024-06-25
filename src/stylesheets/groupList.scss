@@ -1,0 +1,149 @@
+@import './colorSchemes/index.scss';
+
+.groupContainer{
+    width: 99%;
+    height:400px;
+    border-radius:5px;
+    background-color: $bg;
+
+}
+.scaleContainer{
+    border:2px solid $scalesHover;
+}
+.chordContainer{
+    border:2px solid $chordsHover;
+}
+
+.hideContainer{
+    display:none;
+}
+
+// .intervals{
+//     display:block;
+//     float:left;
+// }
+// .noteList{
+//     display:block;
+//     float:left;
+// }
+
+.groupSpacing{
+    padding:4px !important;
+}
+
+.groupBtn:hover .groupNoteList{
+    font-weight:bold;
+}
+
+.interGroup{
+    padding-left:7px !important;
+    color: $fretboardHover !important;
+}
+.selInterGroup{
+    padding-left:7px !important;
+    color: $bg !important;
+}
+
+.interSpacing{
+    // padding-left:5px;
+    padding-right:5px !important;
+    font-size:10px;
+
+}
+.selectedScaleRow{
+    background-color:$scales !important;
+}
+.scaleRow:hover{
+    cursor:pointer;
+    color:$bg;
+    background-color:$scalesHover;
+}
+.scaleRow:hover .groupNoteList{
+    cursor:pointer;
+    color: $bg;
+}
+
+.scaleRow:hover .xClearGroupingBtn{
+    color:$bg;
+    display:block;
+}
+.chordRow:hover .xClearGroupingBtn{
+    color:$bg;
+    display:block;
+}
+
+
+.groupRow{
+    background-color:$bg;
+}
+.scaleRow{
+    text-align: left;
+    color:$scales;
+}
+.chordRow{
+    text-align: left;
+    color:$chords;
+}
+.selectedChordRow{
+    background-color:$chords !important;
+}
+.chordRow:hover{
+    cursor:pointer;
+    color:$bg;
+    background-color:$chordsHover;
+}
+
+.chordRow:active{
+    background-color:$chordsLight;
+}
+.chordRow:hover .groupNoteList{
+    cursor:pointer;
+    color: $bg;
+}
+.chordRow:hover .interGroup{
+    cursor:pointer;
+    color: $bg !important;
+}
+.scaleRow:hover .interGroup{
+    cursor:pointer;
+    color: $bg !important;
+}
+
+.scaleRow:active{
+    background-color:$scalesLight;
+}
+
+.selectedGroupName{
+    color:$bg;
+    font-weight:bold;
+}
+
+.groupNoteList{
+    font-size: smaller;
+    color:$lightText;
+}
+.selectedGroupNoteList{
+    font-size: smaller;
+
+    // font-size: smaller;
+    font-weight:bold;
+    color:$bg;
+}
+.groupNoteList:hover{
+    // font-size: smaller;
+    color:$bg !important;
+    font-weight:bold;
+}
+
+.unselectedClear{
+    display:none;
+}
+
+.xClearGroupingBtn{
+    display:none;
+    float:right;
+    color: $lightText;
+    margin-right:10px;
+    margin-top:-50px;
+    // top:50%;
+}

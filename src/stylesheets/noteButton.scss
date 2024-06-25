@@ -1,0 +1,131 @@
+@import './colorSchemes/index';
+
+.noteButton{
+    display:'block';
+    height: 50px;
+    width:50px !important;
+    border:1px $bg solid !important;
+  }
+
+.noteButton:hover{
+    background-color: $bg !important;
+}
+
+.isRoot{
+    color: $bg !important;
+    font-weight:900;
+    background-color: $root !important;
+    // box-shadow: inset 0 0 0 2px $bg;
+}
+
+.rootCircle{
+    border-radius: 50% !important;
+    border: 4px solid $bg !important;
+
+}
+
+.isRoot:hover{
+    background-color: $rootHover !important;
+    color: $darkText;
+}
+.sIsFifth{
+    color: $bg !important;
+    font-weight:900;
+    background-color: $sFifth !important;
+}
+
+.sIsFifth:hover{
+    background-color: $sFifthHover !important;
+    color: $darkText;
+}
+.cIsFifth{
+    color: $bg !important;
+    font-weight:900;
+    background-color: $cFifth !important;
+}
+
+.cIsFifth:hover{
+    background-color: $cFifthHover !important;
+    color: $darkText;
+}
+
+.sIsThird{
+    color: $bg !important;
+    font-weight:900;
+    background-color: $scales !important;
+}
+
+.sIsThird:hover{
+    background-color: $scalesHover !important;
+    color: $darkText;
+}
+.cIsThird{
+    color: $bg !important;
+    font-weight:900;
+    background-color: $chords !important;
+}
+
+.cIsThird:hover{
+    background-color: $chordsHover !important;
+    color: $darkText;
+}
+.isInRangeScales{
+    padding:2px;
+    background-color: $scales !important;
+    color:$bg !important;
+}
+.isInRangeScales:hover{
+    background-color: $scalesHover !important;
+    color:$bg !important;
+}
+
+.isInRangeChords{
+    padding:2px;
+    background-color: $chords !important;
+    color:$bg !important;
+}
+
+.isInRangeChords:hover{
+    background-color: $chordsHover !important;
+    color:$bg !important;
+}
+
+.isNotInRange{
+    background-color: $fretboard !important;
+    color:$bg !important;
+}
+.isNotInRange:Hover{
+    background-color: $fretboardHover !important;
+    color:$bg !important;
+}
+
+.btnOctave{
+    font-size: x-small;
+    color:$bg;
+}
+
+.noInterval{
+    display:none;
+    // font-size: x-small;
+    // font-weight: bold;
+    // color: $bg;
+}
+.boldInterval{
+    font-size: x-small;
+    font-weight: bold;
+    color: $bg;
+}
+.btnNote{
+    font-weight:bold;
+}
+
+.topright {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    text-align: right;
+}
+
+.noAcc{
+    // padding-right:7px;
+}

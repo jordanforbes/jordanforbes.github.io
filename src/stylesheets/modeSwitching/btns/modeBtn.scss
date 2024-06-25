@@ -1,0 +1,62 @@
+
+//base button
+.modeBtn{
+    display:block;
+    float:left;
+    width:150px;
+    height:60px;
+    margin-bottom: 10px;
+    margin-right:5px;
+    border:2px solid !important;
+    background-color: $bg !important;
+}
+
+//no root selected
+.noRootMode{
+    background-color: $fretboard !important;
+    color:$bg;
+    pointer-events: none;
+    // border:$fretboard !important;
+}
+
+//mode selected
+.activeModeScales{
+    background-color: $scales !important;
+    border-color: $scales !important;
+    color:$bg;
+    pointer-events: none;
+}
+.activeModeChords{
+    background-color: $chords !important;
+    border-color: $chords !important;
+    color:$bg;
+    pointer-events: none;
+}
+
+//other mode selected
+.inactiveModeChords:hover{
+    background-color: $chordsHover !important;
+    border-color: $chordsHover !important;
+}
+.inactiveModeScales:hover{
+    background-color: $scalesHover !important;
+    border-color: $scalesHover !important;
+}
+
+.inactiveModeChords:active{
+    background-color: $chordsLight !important;
+    border-color: $chordsLight !important;
+}
+
+.inactiveModeScales:active{
+    background-color: $scalesLight !important;
+    border-color: $scalesLight !important;
+}
+
+.disabled{
+    pointer-events:none;
+    border:none !important;
+    background-color: transparent;
+    color: $darkText;
+    margin-bottom:15px;
+}

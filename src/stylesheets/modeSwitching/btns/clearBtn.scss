@@ -1,0 +1,27 @@
+.clearBtn{
+    background-color: transparent !important;
+    // width:150px;
+    color:$root !important;
+    border-color: $root !important;
+}
+.clearBtn:hover{
+    // display:block;
+    text-decoration-line: line-through !important;
+    background-color: $root !important;
+    color: $bg !important;
+}
+.clearBtn:active{
+    background-color: $rootLight !important;
+
+}
+
+.xClear{
+    color:$root;
+    margin:-10px -5px 10px 8px;
+    display:block;
+    float:right;
+}
+
+.clearBtn:hover .xClear{
+    color:$bg;
+}
